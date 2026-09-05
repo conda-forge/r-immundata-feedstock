@@ -3,11 +3,13 @@ About r-immundata-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-immundata-feedstock/blob/main/LICENSE.txt)
 
-Home: https://immunomind.github.io/docs/, https://github.com/immunomind/immundata
+Home: https://immunomind.github.io/docs/
 
 Package license: Apache-2.0
 
 Summary: Provides a unified data layer for single-cell, spatial and bulk T-cell and B-cell immune receptor repertoire data. Think AnnData or SeuratObject, but for AIRR data, a.k.a. Adaptive Immune Receptor Repertoire, VDJ-seq, RepSeq, or VDJ sequencing data.
+
+Development: https://github.com/immunomind/immundata
 
 Current build status
 ====================
@@ -16,7 +18,9 @@ Current build status
 <table><tr>
     <td>All platforms:</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <a href="https://github.com/conda-forge/r-immundata-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/r-immundata-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
     </td>
   </tr>
 </table>
@@ -38,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `r-immundata` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install r-immundata
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install r-immundata
 ```
 
-It is possible to list all of the versions of `r-immundata` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add r-immundata
+# for installing globally
+pixi global install r-immundata
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `r-immundata` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search r-immundata --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search r-immundata --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search r-immundata --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -74,6 +120,8 @@ mamba repoquery whoneeds r-immundata --channel conda-forge
 # List dependencies of `r-immundata`:
 mamba repoquery depends r-immundata --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
