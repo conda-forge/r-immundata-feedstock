@@ -32,11 +32,10 @@ requirements:
     - r-checkmate
     - r-cli
     - r-dbplyr
-    - r-dplyr
-    - r-duckplyr >=1.1.0
-    - r-ggplot2
+    - r-dplyr >=1.2.1
+    - r-duckplyr >=1.2.1
     - r-glue
-    - r-jsonlite >=2.0.0
+    - r-jsonlite
     - r-lifecycle
     - r-readr
     - r-rlang
@@ -47,11 +46,10 @@ requirements:
     - r-checkmate
     - r-cli
     - r-dbplyr
-    - r-dplyr
-    - r-duckplyr >=1.1.0
-    - r-ggplot2
+    - r-dplyr >=1.2.1
+    - r-duckplyr >=1.2.1
     - r-glue
-    - r-jsonlite >=2.0.0
+    - r-jsonlite
     - r-lifecycle
     - r-readr
     - r-rlang
@@ -63,7 +61,8 @@ test:
     - "\"%R%\" -e \"library('immundata')\""  # [win]
 
 about:
-  home: https://immunomind.github.io/docs/, https://github.com/immunomind/immundata
+  home: https://immunomind.github.io/docs/
+  dev_url: https://github.com/immunomind/immundata
   license: Apache-2.0
   summary: Provides a unified data layer for single-cell, spatial and bulk T-cell and B-cell immune receptor repertoire data. Think AnnData or SeuratObject, but for AIRR data, a.k.a. Adaptive Immune Receptor Repertoire, VDJ-seq, RepSeq, or VDJ sequencing data.
   license_family: APACHE
