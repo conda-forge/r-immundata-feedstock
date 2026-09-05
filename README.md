@@ -3,11 +3,13 @@ About r-immundata-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-immundata-feedstock/blob/main/LICENSE.txt)
 
-Home: https://immunomind.github.io/docs/, https://github.com/immunomind/immundata
+Home: https://immunomind.github.io/docs/
 
 Package license: Apache-2.0
 
 Summary: Provides a unified data layer for single-cell, spatial and bulk T-cell and B-cell immune receptor repertoire data. Think AnnData or SeuratObject, but for AIRR data, a.k.a. Adaptive Immune Receptor Repertoire, VDJ-seq, RepSeq, or VDJ sequencing data.
+
+Development: https://github.com/immunomind/immundata
 
 Current build status
 ====================
