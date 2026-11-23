@@ -1,4 +1,4 @@
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/immundata_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/immundata/immundata_{{ version }}.tar.gz
-  sha256: 2bd90ea733e366d68049b7a83e9cb2dcc0fd214d8e6e309772d0e1f3296a06fa
+  sha256: 6bb341dd8cabb6ed6c5d6fe6925aac236479952f140f6585d76a01fa133da8b7
 
 build:
   number: 0
